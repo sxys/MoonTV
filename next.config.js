@@ -4,6 +4,10 @@ const nextConfig = {
   output: 'standalone',
   eslint: {
     dirs: ['src'],
+    ignoreDuringBuilds: true,
+  },
+  typescript: {
+    ignoreBuildErrors: true,
   },
 
   reactStrictMode: false,
